@@ -10,8 +10,8 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/layout_edt_email"
-        android:layout_width="267dp"
-        android:layout_height="45dp"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -20,7 +20,7 @@
         <br.com.avalove.avalove.FontePersonalizada
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
             android:hint="E-mail"
             android:paddingLeft="5dp"
@@ -31,18 +31,18 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/layout_edt_password"
-        android:layout_width="266dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/layout_edt_email">
+        app:layout_constraintTop_toTopOf="@+id/guideline3">
 
         <br.com.avalove.avalove.FontePersonalizada
             android:id="@+id/edt_password"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
             android:hint="Password"
             android:paddingLeft="5dp"

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/quadrado_branco"
+        android:src="@drawable/quadrado_transparente"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/guideline10"
         app:layout_constraintHorizontal_bias="0.468"
@@ -27,16 +27,16 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/layout_cadastro_edt_email"
         android:layout_width="252dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toTopOf="@+id/guideline8">
+        app:layout_constraintTop_toTopOf="@+id/guideline11">
 
         <br.com.avalove.avalove.FontePersonalizada
             android:id="@+id/edt_cadastro_email"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
             android:hint="E-mail"
             android:paddingLeft="5dp"
@@ -48,16 +48,17 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/layout_cadastro_edt_password1"
         android:layout_width="252dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/layout_cadastro_edt_email">
+        app:layout_constraintTop_toTopOf="@+id/guideline8">
 
         <br.com.avalove.avalove.FontePersonalizada
             android:id="@+id/edt_cadastro_password1"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
             android:hint="Password"
             android:paddingLeft="5dp"
@@ -69,16 +70,17 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/layout_cadastro_edt_password2"
         android:layout_width="252dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
         android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toBottomOf="@+id/layout_cadastro_edt_password1">
+        app:layout_constraintTop_toTopOf="@+id/guideline8">
 
         <br.com.avalove.avalove.FontePersonalizada
             android:id="@+id/edt_cadastro_password2"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="52dp"
             android:layout_weight="1"
             android:hint="Password"
             android:paddingLeft="5dp"
@@ -99,7 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.41" />
+        app:layout_constraintGuide_percent="0.46" />
 
     <Button
         android:id="@+id/btn_create_account"
@@ -120,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.68" />
+        app:layout_constraintGuide_percent="0.71" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline10"
@@ -149,5 +151,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.84" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.455" />
 
 </android.support.constraint.ConstraintLayout>

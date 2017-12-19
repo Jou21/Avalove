@@ -22,6 +22,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Cadastro" />
+        <activity android:name=".Tab2" />
+        <activity android:name=".Tab1" />
+        <activity android:name=".Tab3" />
+        <activity android:name=".Tab4"></activity>
     </application>
 
 </manifest>

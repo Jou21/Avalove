@@ -15,7 +15,7 @@ import android.widget.EditText;
 
 public class Login extends AppCompatActivity {
 
-    private Button btnSignIn;
+    private Button btnSignIn, btnLogin;
     private EditText edtPassword;
 
     @Override
@@ -36,25 +36,30 @@ public class Login extends AppCompatActivity {
         edtPassword.setTypeface(custom_font);
 
         btnSignIn = (Button) findViewById(R.id.btn_sign_in);
+        btnLogin = (Button) findViewById(R.id.btn_login);
 
-        //this.goToSingIn();
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent goToSignIn = new Intent(Login.this,Cadastro.class);
-                startActivity(goToSignIn);
-            }
-        });
+        this.goToCadastro();
+        this.goToTab2();
 
     }
-/*
-    private void goToSingIn(){
+
+    private void goToCadastro(){
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToSignIn = new Intent(Login.this,Cadastro.class);
-                startActivity(goToSignIn);
+                Intent goToCadastro = new Intent(Login.this,Cadastro.class);
+                startActivity(goToCadastro);
             }
         });
-    }*/
+    }
+
+    private void goToTab2(){
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToTab2 = new Intent(Login.this,Tab2.class);
+                startActivity(goToTab2);
+            }
+        });
+    }
 }
